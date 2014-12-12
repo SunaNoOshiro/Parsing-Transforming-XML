@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plane>
+	<warplane>
+		<model>F7U</model>
+		<origin>USA</origin>
+		<chars>
+			<type>45</type>
+			<seats>1</seats>
+			<combat_kit>4</combat_kit>
+			<availability_of_radar>true</availability_of_radar>
+		</chars>
+		<parameters>
+			<length>7</length>
+			<width>5d</width>
+			<height>2.25</height>
+		</parameters>
+		<price>6100000</price>
+	</warplane>
+	<warplane>
+		<model>F-86A Sabre</model>
+		<origin>USA</origin>
+		<chars>
+			<type>destroyer</type>
+			<seats>1</seats>
+			<combat_kit>6</combat_kit>
+			<availability_of_radar>true</availability_of_radar>
+		</chars>
+		<parameters>
+			<length>6</length>
+			<width>3.5</width>
+			<height>2</height>
+		</parameters>
+		<price>5500000ghg</price>
+	</warplane>
+	<warplane>
+		<model>Gloster Javelin</model>
+		<origin>Great Britain</origin>
+		<chars>
+			<type>destroyer</type>
+			<seats>1</seats>
+			<combat_kit>4</combat_kit>
+			<availability_of_radar>true</availability_of_radar>
+		</chars>
+		<parameters>
+			<length>7</length>
+			<width>4.5</width>
+			<height>1.5</height>
+		</parameters>
+		<price>6100000</price>
+	</warplane>
+	<warplane>
+		<model>Messerschmitt Me.262HG III</model>
+		<origin>Germany</origin>
+		<chars>
+			<type>destroyer</type>
+			<seats>1</seats>
+			<combat_kit>4</combat_kit>
+			<availability_of_radar>true</availability_of_radar>
+		</chars>
+		<parameters>
+			<length>7</length>
+			<width>3</width>
+			<height>1.5</height>
+		</parameters>
+		<price>6000000</price>
+	</warplane>
+</plane>

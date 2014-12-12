@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="plane">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="warplane" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="model">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="origin">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="chars">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="type">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="aircraft support" />
+													<xs:enumeration value="accompaniment" />
+													<xs:enumeration value="destroyer" />
+													<xs:enumeration value="interloper" />
+													<xs:enumeration value="scout" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="seats">
+											<xs:simpleType>
+												<xs:restriction base="xs:integer">
+													<xs:minInclusive value="1" />
+													<xs:maxInclusive value="2" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="combat_kit" minOccurs="0"
+											maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:integer">
+													<xs:minInclusive value="0" />
+													<xs:maxInclusive value="10" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element type="xs:boolean" name="availability_of_radar" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="parameters">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="length">
+											<xs:simpleType>
+												<xs:restriction base="xs:float">
+													<xs:minInclusive value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="width">
+											<xs:simpleType>
+												<xs:restriction base="xs:float">
+													<xs:minInclusive value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="height">
+											<xs:simpleType>
+												<xs:restriction base="xs:float">
+													<xs:minInclusive value="0" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="price">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
